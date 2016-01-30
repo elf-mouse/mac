@@ -22,3 +22,13 @@ brew upgrade [FORMULA...]
 
 brew doctor
 ```
+
+* check
+
+```
+brew update
+brew doctor
+brew --config
+clang --version
+xcrun clang --version
+```
