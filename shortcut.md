@@ -1,0 +1,1 @@
+Finder - `command` + `shift` + `G`
