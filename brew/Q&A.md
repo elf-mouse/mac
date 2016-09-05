@@ -43,3 +43,17 @@ rm /Users/yiban/Library/Caches/Homebrew/little-cms2-2.7.tar.gz
 
 复制到 /Users/yiban/Library/Caches/Homebrew/
 ```
+
+---
+
+Q: Brew update failed
+
+A:
+
+```
+$ cd $(brew --prefix)
+$ git fetch origin
+$ git reset --hard origin/master
+$ brew cleanup --force
+$ brew update
+```
