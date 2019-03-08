@@ -1,12 +1,12 @@
 ## Uninstall all installed gems
 
-__Rubygems >= 2.1.0__
+**Rubygems >= 2.1.0**
 
 ```sh
 gem uninstall -aIx
 ```
 
-__Rubgems < 2.1.0__
+**Rubgems < 2.1.0**
 
 ```sh
 for i in `gem list --no-versions`; do gem uninstall -aIx $i; done
@@ -23,6 +23,21 @@ ERROR:  While executing gem ... (TypeError)
 
 A:
 
-```
+```sh
 gem update --system
+```
+
+---
+
+Q:
+
+```
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.x.x directory.
+```
+
+A:
+
+```sh
+sudo gem install -n /usr/local/bin XXX
 ```
