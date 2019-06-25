@@ -18,7 +18,7 @@ A: `mv /opt/homebrew-cask/Caskroom /usr/local` and `brew cask install --force` t
 
 Q:
 
-```
+```md
 Error: SHA256 mismatch
 Expected: 8d8668d432ba595c7466442aec2cf553bdf8782ec171291dbc65717c633a4ef2
 Actual: 818a4b8bbcb50878a8b1b9f71b4274d242ab46bf860c74676e98dec1d0248821
@@ -34,10 +34,12 @@ To retry an incomplete download, remove the file above.
 
 A:
 
-```
+```sh
 rm /Users/yiban/Library/Caches/Homebrew/libgphoto2-2.5.10.tar.bz2
 rm /Users/yiban/Library/Caches/Homebrew/little-cms2-2.7.tar.gz
+```
 
+```md
 手动下载 http://sourceforge.net/projects/gphoto/files/
 手动下载 https://sourceforge.net/projects/lcms/files/
 
