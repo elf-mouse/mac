@@ -51,3 +51,9 @@ rm /Users/yiban/Library/Caches/Homebrew/little-cms2-2.7.tar.gz
 Q: If Homebrew was updated on Aug 10-11th 2016 and brew update always says Already up-to-date. you need to run:
 
 A: `cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update`
+
+---
+
+Q: Can't uninstall filezilla
+
+A: Delete the `$(brew --prefix)/Caskroom/filezilla` directory worked
