@@ -1,3 +1,61 @@
+Q: `dyld: Library not loaded: /usr/local/opt/openssl/lib/libssl.1.0.0.dylib`
+
+A1: 安装 `openssl.rb`
+
+```sh
+brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
+```
+
+A2: 切换 `openssl` 版本
+
+```sh
+brew switch openssl 1.0.2t
+```
+
+---
+
+Q: `dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.63.dylib`
+
+A:
+
+1. cd to Homebrew's formula directory
+
+```sh
+cd $(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core/Formula
+```
+
+2. Find desired commit (version 63 for icu4c) to checkout
+
+```sh
+git log --follow icu4c.rb
+```
+
+3. Checkout to a new branch
+
+```sh
+git checkout -b icu4c-63 e7f0f10dc63b1dc1061d475f1a61d01b70ef2cb7
+```
+
+4. Reinstall the library with the new version
+
+```sh
+brew reinstall ./icu4c.rb
+```
+
+5. Switch to the reinstalled version
+
+```sh
+brew switch icu4c 63.1
+```
+
+6. Checkout back to master
+
+```sh
+git checkout master
+```
+
+---
+
 Q: `brew cask uninstall <Cask>` 无效时
 
 A: `brew cask uninstall --force <Cask>`
