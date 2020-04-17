@@ -14,6 +14,12 @@ brew switch openssl 1.0.2t
 
 ---
 
+Q: `dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.64.dylib`
+
+A: `brew upgrade icu4c`
+
+---
+
 Q: `dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.63.dylib`
 
 A:
