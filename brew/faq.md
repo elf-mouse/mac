@@ -121,3 +121,9 @@ A: `cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew u
 Q: Can't uninstall filezilla
 
 A: Delete the `$(brew --prefix)/Caskroom/filezilla` directory worked
+
+---
+
+Q: zsh: no matches found
+
+A: Edit `.zshrc`: `setopt no_nomatch`
