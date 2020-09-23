@@ -26,39 +26,39 @@ A:
 
 1. cd to Homebrew's formula directory
 
-```sh
-cd $(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core/Formula
-```
+   ```sh
+   cd $(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core/Formula
+   ```
 
 2. Find desired commit (version 63 for icu4c) to checkout
 
-```sh
-git log --follow icu4c.rb
-```
+   ```sh
+   git log --follow icu4c.rb
+   ```
 
 3. Checkout to a new branch
 
-```sh
-git checkout -b icu4c-63 e7f0f10dc63b1dc1061d475f1a61d01b70ef2cb7
-```
+   ```sh
+   git checkout -b icu4c-63 e7f0f10dc63b1dc1061d475f1a61d01b70ef2cb7
+   ```
 
 4. Reinstall the library with the new version
 
-```sh
-brew reinstall ./icu4c.rb
-```
+   ```sh
+   brew reinstall ./icu4c.rb
+   ```
 
 5. Switch to the reinstalled version
 
-```sh
-brew switch icu4c 63.1
-```
+   ```sh
+   brew switch icu4c 63.1
+   ```
 
 6. Checkout back to master
 
-```sh
-git checkout master
-```
+   ```sh
+   git checkout master
+   ```
 
 ---
 
@@ -118,7 +118,7 @@ A: `cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew u
 
 ---
 
-Q: Can't uninstall filezilla
+Q: Can't uninstall filezilla / "No Cask with this name exists"
 
 A: Delete the `$(brew --prefix)/Caskroom/filezilla` directory worked
 
