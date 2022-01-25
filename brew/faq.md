@@ -127,3 +127,9 @@ A: Delete the `$(brew --prefix)/Caskroom/filezilla` directory worked
 Q: zsh: no matches found
 
 A: Edit `.zshrc`: `setopt no_nomatch`
+
+---
+
+Q: bad CPU type in executable
+
+A: For Mac M1 - install Rosetta `softwareupdate --install-rosetta`
