@@ -133,3 +133,8 @@ A: Edit `.zshrc`: `setopt no_nomatch`
 Q: bad CPU type in executable
 
 A: For Mac M1 - install Rosetta `softwareupdate --install-rosetta`
+
+---
+
+Q: fatal error: 'pcre2.h' file not found
+A: For Mac M1 - `ln -s /opt/homebrew/include/pcre2.h /opt/homebrew/Cellar/php@7.4/7.4.32/include/php/ext/pcre/pcre2.h `
